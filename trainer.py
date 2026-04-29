@@ -71,9 +71,7 @@ class Trainer:
             train_loss = self.train_one_epoch()
             val_loss, val_acc = self.test()
             self.scheduler.step()
-            current_lr = self.optimizer.param_groups[0]["lr"]
             print(f"Epoch {epoch+1}, Train Loss: {train_loss}, Val Loss: {val_loss}, Val Acc: {val_acc}")
-            print(f"Current LR: {current_lr:.8f}")
             if val_loss < best_val_loss:
                 best_val_loss = val_loss
                 torch.save(self.model.state_dict(), os.path.join(self.save_dir, f"best_model.pth"))
