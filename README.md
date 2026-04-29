@@ -18,7 +18,7 @@ Using Resnet50 as the base model, random split 100 images for validation, the re
 |Vanilla Resnet50|0.1710|0.95|0.8273|
 |Resnet50 + train additional transforms|0.0828|0.96|0.829|
 |Resnet50 + train additional transforms + scheduler|0.6180|0.97|0.868 (amazing)|
-|[ConvNeXt baseline](https://www.kaggle.com/code/ambrosm/dlmmdd-baseline-with-convnext)|None|None|None|
+|[ConvNeXt baseline](https://www.kaggle.com/code/ambrosm/dlmmdd-baseline-with-convnext)|0.5182|1.0|0.868|
 
 ## Reference
 - https://www.kaggle.com/competitions/dlmmdd-workshop-synthetic-source-attribution-challenge
